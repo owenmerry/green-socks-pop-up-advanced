@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="./css/app.css" />
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    </head>
+<body>
+    <div class="app">
+       <div class="image"></div>
+       <div class="title">
+           <h2>Sample 01</h2>
+       </div>
+       <div class="bg"></div>
+       <div class="controls">
+           <div class="controls__button controls__button--prev" onClick="prevSlide()">
+                <svg id="icon-arrow" viewBox="0 0 24 24" width="100%" height="100%">
+                        <title>arrow</title>
+                        <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "></polygon>
+                    </svg>
+           </div>
+           <div class="controls__button controls__button--next" onClick="nextSlide()">
+                <svg id="icon-arrow" viewBox="0 0 24 24" width="100%" height="100%">
+                        <title>arrow</title>
+                        <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "></polygon>
+                    </svg>
+           </div>
+       </div>
+       <div class="logo">owenmerry.com</div>
+       <div class="info">
+           <ul>
+               <li onClick="openAbout()">About</li>
+               <li>Info</li>
+               <li>Contact Us</li>
+            </ul>
+       </div>
+       <div class="about">
+           <div class="holder">
+               <div class="close" onClick="closeAbout()">
+                    <svg id="icon-close" viewBox="0 0 24 24" width="100%" height="100%">
+                        <title>close</title>
+                        <path d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z"></path>
+                    </svg>
+               </div>
+           </div>
+       </div>
+    </div>
+
+    <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/app.js"></script>   
+</body>
+</html>
